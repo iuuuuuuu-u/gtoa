@@ -27,3 +27,12 @@ G=Y[0][Y.argmin()]
 print(Y)
 
 print(G)
+
+#设置终止条件，当到达迭代次数时，跳出循环，输出最优解
+flag=1;
+while flag:
+    if Tcur>=Tmax:
+        print(G)
+        flag=0;
+    else :
+        pass
