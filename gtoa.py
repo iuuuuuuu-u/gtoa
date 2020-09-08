@@ -18,6 +18,12 @@ for j in range(N) :
     X[0][a]=i;
     a=a+1;
 
+#获取适应度，拿到当前最优解
+Y=np.subtract(np.multiply(X,X),5)
+Tcur=Tcur+N
 
+#当前最优解
+G=Y[0][Y.argmin()]
+print(Y)
 
-print(X)
+print(G)
